@@ -131,7 +131,7 @@ POST 请求必须使用 `Content-Type: application/json`。接口永远只影响
 
 ### B. GitHub Pages 静态预览
 
-已附 `.github/workflows/pages.yml`。推送后在仓库 Settings → Pages → Source 选择 GitHub Actions，可发布 `public/`。
+已附 `.github/workflows/pages.yml`。在仓库 Settings → Pages → Source 选择 GitHub Actions，再到 Actions → Publish static demo → Run workflow，可发布 `public/`。普通代码推送只运行自动测试，不会因尚未启用 Pages 导致检查失败。
 
 **Pages不运行Node后台**：静态站仅提供明确标注的合成行情演示，账本在浏览器本地，不提供真实行情和模型代理。请勿将其演示收益当作实验结果发布。
 
