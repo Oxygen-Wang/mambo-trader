@@ -1,0 +1,22 @@
+{
+  "name": "ai-paper-arena",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "A-share paper trading, bring-your-own-model and creator diary. Virtual funds only.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "mcp": "node mcp-server.mjs",
+    "video": "node scripts/make-video.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "qrcode": "1.5.4"
+  }
+}
